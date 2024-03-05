@@ -9,3 +9,139 @@ body{
     background-color: #222;
     
 }
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px, 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30pX;
+
+}
+.weather h1{
+    font-size: 80px;
+    font-weight:400;
+
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+
+}
+
+/* .detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.details #col1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.details #col2{
+    display: flex;
+    align-items: end;
+    text-align: left;
+
+} */
+
+
+/* Other styles remain unchanged */
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 30px; 
+}
+
+.details #col1, .details #col2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* This ensures both the humidity and wind details are centered relative to their icons and labels */
+.details #col1 > div, .details #col2 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px; 
+}
+
+.details #col1 img, .details #col2 img{
+    width: 50px;
+    height: auto;
+}
+
+.search input {
+    padding: 10px 25px; 
+}
+
+
+.humidity, .wind{
+    font-size: 25px;
+    margin: -6px;
+}
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
